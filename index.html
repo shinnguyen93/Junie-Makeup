@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/normalize.css" />
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- main css -->
   <link rel="stylesheet" href="./css/main.css" />
 
@@ -21,7 +22,7 @@
 <body>
   <div id="loader" class="loading"></div>
   <!-- nav -->
-  <nav>
+  <nav class="sticky">
     <!-- header -->
     <div class="logo">
       <a href="index.html">
@@ -33,7 +34,7 @@
       <a href="index.html">Home</a>
       <a href="#about">About</a>
       <a href="#service">Service</a>
-      <a href="recipes.html">Recipes</a>
+      <a href="#feedback">Feedback</a>
       <a href="#contact">Contact</a>
     </div>
     <div class="burger">
@@ -80,30 +81,32 @@
       <div id="service" class="service-wrapper">
         <h1>our services</h1>
         <div class="services">
-          <div class="service">
+          <div class="single-service">
             <h1>bridal</h1>
-            <p>Make up bridal style. Become the most beautiful in your wedding</p>
-            <img src="./assets/bridal.jpg" alt="bridal">
+            <p>Make up bridal style</p>
+            <img src="./assets/bridal.jpg" alt="bridal" />
           </div>
-          <div class="service">
+          <div class="single-service">
             <h1>normal</h1>
             <p>ideal style for casual or hang out dinner</p>
-            <img src="./assets/normal.jpg" alt="normal">
+            <img src="./assets/normal.jpg" alt="normal" />
           </div>
-          <div class="service">
+          <div class="single-service">
             <h1>korean style</h1>
-            <p>get the latest make up trending like korean kpop star</p>
-            <img src="./assets/korean.jpg" alt="korean">
+            <p>the latest makeup trending like korean kpop star</p>
+            <img src="./assets/korean.jpg" alt="korean" />
           </div>
         </div>
       </div>
 
-      <div class="feedback-wrapper">
+      <div id="feedback" class="feedback-wrapper">
         <h1>feedback</h1>
       </div>
 
       <div id="contact" class="contact-wrapper">
         <h1>contact info</h1>
+        <div><i class="fa fa-instagram" style="font-size:48px;color:red"></i></div>
+        <i class="fa fa-facebook"></i>
       </div>
     </div>
   </main>
