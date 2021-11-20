@@ -299,9 +299,12 @@
   const currentYear = new Date().getFullYear();
 
 
+  
+
   /* initialize
    * ------------------------------------------------------ */
   (function ssInit() {
+    history.pushState("", document.title, window.location.pathname);
     date.textContent = currentYear;
     ssPreloader();
     ssPrettyPrint();
