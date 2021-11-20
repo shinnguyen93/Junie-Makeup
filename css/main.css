@@ -2029,7 +2029,7 @@ input::-moz-focus-inner {
     to(rgba(0, 0, 0, 0))
   );
   background: linear-gradient(90deg, black 10%, rgba(0, 0, 0, 0) 100%);
-  opacity: 0.25;
+  /* opacity: 0.25; */
 }
 
 .no-js .s-hero {
