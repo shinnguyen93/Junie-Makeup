@@ -82,6 +82,7 @@
   --dark-blue-magenta: #0b0a15;
   --light-cyan: #b3c2c1;
   --light-pink: #f8bbd0;
+  --mainly-blue: #544d9d;
 }
 
 /* ===================================================================
@@ -120,7 +121,7 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-  color: var(--light-pink);
+  color: var(--white);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -128,7 +129,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #544d9d;
+  color: var(--light-pink);
 }
 
 a:hover,
@@ -1653,8 +1654,8 @@ input::-moz-focus-inner {
 }
 
 .s-header.sticky .header-logo img {
-  width: 35px;
-  height: 38px;
+  width: 20rem;
+  height: 10rem;
 }
 
 .s-header.sticky .header-content .btn {
@@ -1701,8 +1702,8 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 41px;
-  height: 44px;
+  width: 20rem;
+  height: 10rem;
   vertical-align: bottom;
 }
 
@@ -1711,7 +1712,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .header-nav-wrap {
   max-width: 1400px;
-  padding-left: 10px;
+  padding-left: 10rem;
 }
 
 .header-nav {
@@ -1731,7 +1732,7 @@ input::-moz-focus-inner {
 
 .header-nav a:hover,
 .header-nav a:focus {
-  color: var(--white) !important;
+  color: var(--light-pink) !important;
 }
 
 .header-nav li {
@@ -1862,7 +1863,7 @@ input::-moz-focus-inner {
   .header-nav-wrap {
     max-width: none;
     width: 100%;
-    padding-left: 13.2rem;
+    padding-left: 25rem;
   }
 
   .header-content .btn {
@@ -1884,8 +1885,8 @@ input::-moz-focus-inner {
   }
 
   .header-logo img {
-    width: 37px;
-    height: 40px;
+    width: 20rem;
+    height: 10rem;
   }
 
   .header-content {
@@ -2740,6 +2741,10 @@ html.no-csstransitions .hero-content {
     max-width: none;
   }
 
+  .s-services__content .s-services__leftcol p.lead a{
+    color: var(--light-pink);
+  }
+
   .services-list {
     padding-left: 0;
     margin: 0;
@@ -3440,10 +3445,23 @@ html.no-csstransitions .hero-content {
 /* ================================================= */
 /* Customization */
 /* ================================================= */
+#hero h1{
+  font-family: "Brush Script MT";
+}
+
 #hero-text {
   color: var(--light-pink);
-  text-decoration: underline;
 }
+
+.h-dark-bg p.lead a{
+  color: var(--white);
+  font-weight: bold;
+}
+
+.h-dark-bg p.lead a:hover{
+  color: var(--light-pink);
+}
+
 
 .testimonial-heading {
   text-align: center;
