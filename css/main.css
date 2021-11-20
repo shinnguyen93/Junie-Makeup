@@ -2042,7 +2042,7 @@ input::-moz-focus-inner {
   max-width: 1400px;
   -ms-flex-align: end;
   -webkit-box-align: end;
-  align-items: flex-end;
+  align-items: center;
   padding-top: 20vh;
   padding-bottom: 14vh;
   position: relative;
@@ -2058,7 +2058,7 @@ input::-moz-focus-inner {
   position: relative;
 }
 
-.hero-content h1::before {
+/* .hero-content h1::before {
   content: "";
   display: block;
   height: 2px;
@@ -2067,7 +2067,8 @@ input::-moz-focus-inner {
   position: absolute;
   left: -10.8rem;
   top: 0.55em;
-}
+} */
+
 
 /* -------------------------------------------------------------------
  * ## hero social
@@ -3308,7 +3309,7 @@ html.no-csstransitions .hero-content {
   content: "|";
   display: inline-block;
   padding: 0 0.8rem 0 1rem;
-  color: rgba(255, 255, 255, 0.1);
+  color: var(--light-pink);
 }
 
 .ss-copyright span:last-child::after {
@@ -3403,9 +3404,9 @@ html.no-csstransitions .hero-content {
     padding-top: 20rem;
   }
 
-  .ss-copyright {
+  /* .ss-copyright {
     padding-right: 10rem;
-  }
+  } */
 
   .ss-go-top {
     right: 3.6rem;
@@ -3418,9 +3419,9 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width: 600px) {
-  .ss-copyright {
+  /* .ss-copyright {
     padding-right: 8rem;
-  }
+  } */
 
   .ss-copyright span {
     display: block;
@@ -3436,7 +3437,10 @@ html.no-csstransitions .hero-content {
   }
 }
 
-/* Customize */
+
+/* ================================================= */
+/* Customization */
+/* ================================================= */
 #hero-text {
   color: var(--light-pink);
   text-decoration: underline;
@@ -3456,5 +3460,25 @@ html.no-csstransitions .hero-content {
   .section-intro{
     align-items: center;
     text-align: center;
+  }
+
+  .ss-copyright {
+    padding: 0;
+  }
+
+  
+}
+
+
+@media screen and (min-width: 1310px) {
+  .hero-content h1::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 8rem;
+    background-color: var(--light-pink);
+    position: absolute;
+    left: -10.8rem;
+    top: 0.55em;
   }
 }
