@@ -263,7 +263,20 @@
         .done(function () {
           window.location.hash = target;
         });
+      setTimeout(() => {
+        // call removeHash function after set timeout
+        removeHash();
+      }, 5);
     });
+    function removeHash() {
+      history.replaceState(
+        "",
+        document.title,
+        window.location.origin +
+          window.location.pathname +
+          window.location.search
+      );
+    }
   };
 
   /* back to top
@@ -298,13 +311,10 @@
   const date = getElement("#date");
   const currentYear = new Date().getFullYear();
 
-
-  
-
   /* initialize
    * ------------------------------------------------------ */
   (function ssInit() {
-    history.pushState("", document.title, window.location.pathname);
+    // history.pushState("", document.title, window.location.pathname);
     date.textContent = currentYear;
     ssPreloader();
     ssPrettyPrint();
