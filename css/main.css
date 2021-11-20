@@ -79,7 +79,6 @@
   --gray-2: #050505;
   --white: #ffffff;
   --light-red: #e0e0e0;
-  --theme-color: #f9861a;
   --dark-blue-magenta: #0b0a15;
   --light-cyan: #b3c2c1;
   --light-pink: #f8bbd0;
@@ -121,7 +120,7 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-  color: var(--theme-color);
+  color: var(--light-pink);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -473,7 +472,7 @@ ul.disc li::before {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--theme-color);
+  background: var(--light-pink);
   position: absolute;
   left: -16px;
   top: 11px;
@@ -482,7 +481,7 @@ ul.disc li::before {
 
 dt {
   margin: 0;
-  color: var(--theme-color);
+  color: var(--light-pink);
 }
 
 dd {
@@ -949,7 +948,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-text-fill-color: var(--theme-color);
+  -webkit-text-fill-color: var(--light-pink);
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -1228,7 +1227,7 @@ input::-moz-focus-inner {
 }
 
 .stats-tabs li a:hover {
-  color: var(--theme-color);
+  color: var(--light-pink);
 }
 
 .stats-tabs li a em {
@@ -1847,8 +1846,8 @@ input::-moz-focus-inner {
 
 .header-content .btn:hover,
 .header-content .btn:focus {
-  background-color: var(--theme-color) !important;
-  border-color: var(--theme-color) !important;
+  background-color: var(--light-pink) !important;
+  border-color: var(--light-pink) !important;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2941,7 +2940,7 @@ html.no-csstransitions .hero-content {
 .folio-item__project-link:hover,
 .folio-item__project-link:focus,
 .folio-item__project-link:active {
-  background-color: var(--theme-color);
+  background-color: var(--light-pink);
   color: var(--white);
 }
 
