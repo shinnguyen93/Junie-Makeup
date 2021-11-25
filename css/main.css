@@ -3499,3 +3499,8 @@ html.no-csstransitions .hero-content {
     top: 0.55em;
   }
 }
+
+
+.folio-item {
+  align-items: center;
+}
