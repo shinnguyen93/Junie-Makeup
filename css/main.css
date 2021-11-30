@@ -83,6 +83,13 @@
   --light-cyan: #b3c2c1;
   --light-pink: #f8bbd0;
   --mainly-blue: #544d9d;
+
+  --basic-dark-color: #212121;
+  --basic-light-color: #fff;
+  --fb-color: #3b5998;
+  --insta: #bc2a8d;
+  --border-radius: 10px;
+  --font-size: 25px;
 }
 
 /* ===================================================================
@@ -1486,7 +1493,7 @@ input::-moz-focus-inner {
 
 .subhead {
   /* font-size: 1.4rem; */
-  font-size: 2.4rem; 
+  font-size: 2.4rem;
   line-height: 1.286;
   text-transform: uppercase;
   letter-spacing: 0.4em;
@@ -2044,7 +2051,7 @@ input::-moz-focus-inner {
   -ms-flex-align: end;
   -webkit-box-align: end;
   align-items: center;
-  padding-top: 20vh;
+  /* padding-top: 20vh; */
   padding-bottom: 14vh;
   position: relative;
 }
@@ -2070,7 +2077,6 @@ input::-moz-focus-inner {
   top: 0.55em;
 } */
 
-
 /* -------------------------------------------------------------------
  * ## hero social
  * ------------------------------------------------------------------- */
@@ -2084,7 +2090,7 @@ input::-moz-focus-inner {
   -webkit-box-direction: normal;
   flex-flow: row wrap;
   font-family: "Gothic A1", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 3.2rem;
   text-transform: uppercase;
@@ -2111,7 +2117,7 @@ input::-moz-focus-inner {
 
 .hero-social li::after {
   content: "/";
-  color: rgba(255, 255, 255, 0.1);
+  color: var(--light-pink);
   margin-left: 0rem;
   margin-right: 1rem;
 }
@@ -2365,7 +2371,7 @@ html.no-csstransitions .hero-content {
   }
 
   .hero-social {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -2374,9 +2380,9 @@ html.no-csstransitions .hero-content {
     font-size: 4.8rem;
   }
 
-  .hero-social {
+  /* .hero-social {
     padding-right: 7.2rem;
-  }
+  } */
 
   .hero-scroll {
     right: 3.6rem;
@@ -2398,7 +2404,7 @@ html.no-csstransitions .hero-content {
   }
 
   .hero-social {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .hero-scroll {
@@ -2742,7 +2748,7 @@ html.no-csstransitions .hero-content {
     max-width: none;
   }
 
-  .s-services__content .s-services__leftcol p.lead a{
+  .s-services__content .s-services__leftcol p.lead a {
     color: var(--light-pink);
   }
 
@@ -3442,11 +3448,10 @@ html.no-csstransitions .hero-content {
   }
 }
 
-
 /* ================================================= */
 /* Customization */
 /* ================================================= */
-#home h1{
+#home h1 {
   font-family: "Brush Script MT";
 }
 
@@ -3454,15 +3459,14 @@ html.no-csstransitions .hero-content {
   color: var(--light-pink);
 }
 
-.h-dark-bg p.lead a{
+.h-dark-bg p.lead a {
   color: var(--white);
   font-weight: bold;
 }
 
-.h-dark-bg p.lead a:hover{
+.h-dark-bg p.lead a:hover {
   color: var(--light-pink);
 }
-
 
 .testimonial-heading {
   text-align: center;
@@ -3474,8 +3478,8 @@ html.no-csstransitions .hero-content {
   border: 0;
 }
 
-@media screen and (max-width: 900px){
-  .section-intro{
+@media screen and (max-width: 900px) {
+  .section-intro {
     align-items: center;
     text-align: center;
   }
@@ -3483,10 +3487,7 @@ html.no-csstransitions .hero-content {
   .ss-copyright {
     padding: 0;
   }
-
-  
 }
-
 
 @media screen and (min-width: 1310px) {
   .hero-content h1::before {
@@ -3501,7 +3502,92 @@ html.no-csstransitions .hero-content {
   }
 }
 
-
 .folio-item {
   align-items: center;
+}
+
+/* variables */
+.effect {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.effect .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.effect a:last-child {
+  margin-right: 0px;
+}
+
+/*common link styles !!!YOU NEED THEM*/
+.effect {
+  display: flex;
+}
+
+.effect a {
+  text-decoration: none !important;
+  color: var(--basic-light-color);
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: var(--border-radius);
+  margin-right: 20px;
+  font-size: var(--font-size);
+  overflow: hidden;
+  position: relative;
+}
+
+.effect a i {
+  position: relative;
+  z-index: 3;
+}
+
+.effect a.fb {
+  background-color: var(--fb-color);
+}
+
+.effect a.insta {
+  background-color: var(--insta);
+}
+
+/* egeon effect */
+.effect.egeon a {
+  -webkit-transition: border-radius 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+  transition: border-radius 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
+  transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+}
+
+.effect.egeon a i {
+  -webkit-transition: -webkit-transform 0.2s linear 0s;
+  transition: -webkit-transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s, -webkit-transform 0.2s linear 0s;
+}
+
+.effect.egeon a:hover {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.effect.egeon a:hover i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
