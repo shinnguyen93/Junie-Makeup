@@ -73,8 +73,9 @@
 
 :root {
   --black: #000000;
+  --light-black: #2c272e;
   --light-gray: #d3d3d3;
-  --light-gray-little: #efefef;
+  --light-gray-little: #441f1f;
   --gray: #7e7e7e;
   --gray-2: #050505;
   --white: #ffffff;
@@ -83,6 +84,7 @@
   --light-cyan: #b3c2c1;
   --light-pink: #f8bbd0;
   --mainly-blue: #544d9d;
+  --quote: #212121;
 
   --basic-dark-color: #212121;
   --basic-light-color: #fff;
@@ -1513,6 +1515,7 @@ input::-moz-focus-inner {
 }
 
 .section-intro .display-1 {
+  font-family: "Patrick Hand", cursive;
   margin-top: 0;
 }
 
@@ -2470,8 +2473,8 @@ html.no-csstransitions .hero-content {
 .s-about__section--profile .profile-pic {
   width: 24vw;
   position: absolute;
-  top: 8rem;
-  left: calc(50% + 80px);
+  top: 0px;
+  left: calc(70% + 80px);
 }
 
 /* ------------------------------------------------------------------- 
@@ -2533,7 +2536,7 @@ html.no-csstransitions .hero-content {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
   .s-about__section--profile::before {
-    left: 75%;
+    left: 55%;
   }
 
   .s-about__section--profile .profile-pic {
@@ -3517,8 +3520,8 @@ html.no-csstransitions .hero-content {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .effect a:last-child {
@@ -3539,11 +3542,11 @@ html.no-csstransitions .hero-content {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: var(--border-radius);
   margin-right: 20px;
   font-size: var(--font-size);
@@ -3566,10 +3569,12 @@ html.no-csstransitions .hero-content {
 
 /* egeon effect */
 .effect.egeon a {
-  -webkit-transition: border-radius 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+  -webkit-transition: border-radius 0.2s linear 0.2s,
+    -webkit-transform 0.2s linear 0s;
   transition: border-radius 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
   transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
-  transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s,
+    -webkit-transform 0.2s linear 0s;
 }
 
 .effect.egeon a i {
@@ -3581,7 +3586,7 @@ html.no-csstransitions .hero-content {
 
 .effect.egeon a:hover {
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -3589,5 +3594,59 @@ html.no-csstransitions .hero-content {
 
 .effect.egeon a:hover i {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.hero-content h5 {
+  line-height: 1.257;
+  padding-right: 3.2rem;
+  margin-top: 0;
+  color: var(--white);
+  position: relative;
+}
+
+.quote {
+  float: right;
+  padding-top: 8rem;
+  position: relative;
+  right: 25rem;
+  font-size: 3rem;
+  color: var(--quote);
+}
+
+.quote span{
+  color: var(--white);
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1700px){
+  .quote {
+    top: 0px;
+    right: 10rem;
+  }
+}
+
+@media screen and (max-width: 1366px){
+  .quote {
+    top: 0px;
+    right: 2rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 900px){
+  .quote {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+
+@media screen and (max-width: 800px){
+  .quote {
+    display: none;
+  }
+}
+
+.justify-text{
+  text-align: justify;
 }
