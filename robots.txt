@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /maps/
+Sitemap: https://juniemakeup.tk/sitemap.xml
