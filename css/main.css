@@ -3611,6 +3611,8 @@ html.no-csstransitions .hero-content {
   position: relative;
   right: 25rem;
   font-size: 3rem;
+  font-weight: 500;
+  font-family: 'Permanent Marker', cursive;;
   color: var(--quote);
 }
 
@@ -3648,5 +3650,8 @@ html.no-csstransitions .hero-content {
 }
 
 .justify-text{
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: 'Patrick Hand', cursive;
   text-align: justify;
 }
